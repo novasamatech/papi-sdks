@@ -1,11 +1,11 @@
 {
-  "name": "@polkadot-api/sdk-statement",
-  "version": "0.4.0",
+  "name": "@novasamatech/sdk-statement",
+  "version": "0.5.0",
   "sideEffects": false,
   "author": "Carlo Sala (https://github.com/carlosala)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/polkadot-api/papi-sdks.git"
+    "url": "git+https://github.com/novasamatech/papi-sdks.git"
   },
   "exports": {
     ".": {

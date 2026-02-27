@@ -4,7 +4,7 @@ import {
   getStatementSigner,
   stringToTopic,
   type Statement,
-} from "@polkadot-api/sdk-statement"
+} from "@novasamatech/sdk-statement"
 import { getWsProvider } from "polkadot-api/ws"
 import { sign, getPublicKey } from "@scure/sr25519"
 import { Binary, Blake2256 } from "@polkadot-api/substrate-bindings"

@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "dependencies": {
-    "@polkadot-api/sdk-statement": "workspace:*",
+    "@novasamatech/sdk-statement": "workspace:*",
     "@polkadot-api/substrate-bindings": "^0.19.0",
     "@polkadot-api/substrate-client": "^0.6.0",
     "@scure/sr25519": "^1.0.0",

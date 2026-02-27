@@ -141,7 +141,7 @@ importers:
 
   examples/statement-playground:
     dependencies:
-      '@polkadot-api/sdk-statement':
+      '@novasamatech/sdk-statement':
         specifier: workspace:*
         version: link:../../packages/sdk-statement
       '@polkadot-api/substrate-bindings':
