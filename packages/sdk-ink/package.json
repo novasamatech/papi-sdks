@@ -9,26 +9,15 @@
   },
   "exports": {
     ".": {
-      "node": {
-        "production": {
-          "import": "./dist/esm/src/index.mjs",
-          "require": "./dist/min/index.js",
-          "default": "./dist/index.js"
-        },
-        "import": "./dist/esm/src/index.mjs",
-        "require": "./dist/index.js",
-        "default": "./dist/index.js"
-      },
-      "module": "./dist/esm/src/index.mjs",
-      "import": "./dist/esm/src/index.mjs",
-      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts",
+      "module": "./dist/index.js",
+      "import": "./dist/index.js",
       "default": "./dist/index.js"
-    },
-    "./package.json": "./package.json"
+    }
   },
   "main": "./dist/index.js",
-  "module": "./dist/esm/src/index.mjs",
-  "browser": "./dist/esm/src/index.mjs",
+  "module": "./dist/index.js",
+  "browser": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"

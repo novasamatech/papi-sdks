@@ -28,17 +28,10 @@ export default [
     plugins: [absoluteAlias, esbuild()],
     output: [
       {
-        file: `dist/index.js`,
-        format: "cjs",
-        sourcemap: true,
-        inlineDynamicImports: true,
-      },
-      {
-        dir: `dist/esm`,
+        dir: `dist`,
         format: "es",
         sourcemap: true,
         preserveModules: true,
-        entryFileNames: "[name].mjs",
       },
     ],
   },
