@@ -44,7 +44,7 @@
     "rxjs": ">=7.8.1"
   },
   "devDependencies": {
-    "polkadot-api": "^2.0.0-rc.5",
+    "polkadot-api": "^2.0.0",
     "rxjs": "^7.8.2"
   }
 }

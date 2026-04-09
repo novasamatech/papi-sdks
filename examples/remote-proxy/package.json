@@ -10,15 +10,15 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@types/node": "^25.5.0",
+    "@types/node": "^25.5.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.9.3",
-    "vite": "^8.0.0"
+    "typescript": "^6.0.2",
+    "vite": "^8.0.8"
   },
   "dependencies": {
     "@polkadot-api/descriptors": "file:.papi/descriptors",
     "@polkadot-api/sdk-remote-proxy": "workspace:*",
-    "polkadot-api": "^2.0.0-rc.5",
+    "polkadot-api": "^2.0.0",
     "rxjs": "^7.8.2"
   }
 }
