@@ -9,26 +9,15 @@
   },
   "exports": {
     ".": {
-      "node": {
-        "production": {
-          "import": "./dist/esm/src/index.mjs",
-          "require": "./dist/min/index.js",
-          "default": "./dist/index.js"
-        },
-        "import": "./dist/esm/src/index.mjs",
-        "require": "./dist/index.js",
-        "default": "./dist/index.js"
-      },
-      "module": "./dist/esm/src/index.mjs",
-      "import": "./dist/esm/src/index.mjs",
-      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts",
+      "module": "./dist/index.js",
+      "import": "./dist/index.js",
       "default": "./dist/index.js"
-    },
-    "./package.json": "./package.json"
+    }
   },
   "main": "./dist/index.js",
-  "module": "./dist/esm/index.mjs",
-  "browser": "./dist/esm/index.mjs",
+  "module": "./dist/index.js",
+  "browser": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"
@@ -41,14 +30,14 @@
   "license": "MIT",
   "dependencies": {
     "@polkadot-api/common-sdk-utils": "workspace:*",
-    "@polkadot-api/substrate-bindings": "^0.19.0"
+    "@polkadot-api/substrate-bindings": "^0.20.0"
   },
   "peerDependencies": {
     "polkadot-api": ">=2.0.0-rc.5",
     "rxjs": ">=7.8.0"
   },
   "devDependencies": {
-    "polkadot-api": "^2.0.0-rc.5",
+    "polkadot-api": "^2.0.0",
     "rxjs": "^7.8.2"
   }
 }
