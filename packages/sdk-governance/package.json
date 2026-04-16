@@ -1,6 +1,6 @@
 {
   "name": "@polkadot-api/sdk-governance",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "sideEffects": false,
   "author": "Victor Oliva (https://github.com/voliva)",
   "repository": {
@@ -9,26 +9,15 @@
   },
   "exports": {
     ".": {
-      "node": {
-        "production": {
-          "import": "./dist/esm/index.mjs",
-          "require": "./dist/min/index.js",
-          "default": "./dist/index.js"
-        },
-        "import": "./dist/esm/index.mjs",
-        "require": "./dist/index.js",
-        "default": "./dist/index.js"
-      },
-      "module": "./dist/esm/index.mjs",
-      "import": "./dist/esm/index.mjs",
-      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts",
+      "module": "./dist/index.js",
+      "import": "./dist/index.js",
       "default": "./dist/index.js"
-    },
-    "./package.json": "./package.json"
+    }
   },
   "main": "./dist/index.js",
-  "module": "./dist/esm/index.mjs",
-  "browser": "./dist/esm/index.mjs",
+  "module": "./dist/index.js",
+  "browser": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"
@@ -41,17 +30,17 @@
   "license": "MIT",
   "dependencies": {
     "@polkadot-api/common-sdk-utils": "workspace:*",
-    "@polkadot-api/substrate-bindings": "^0.19.0",
+    "@polkadot-api/substrate-bindings": "^0.20.1",
     "@react-rxjs/utils": "^0.9.7",
-    "polkadot-api": "^2.0.0-rc.2",
+    "polkadot-api": "2.0.2",
     "scale-ts": "^1.6.1"
   },
   "peerDependencies": {
-    "polkadot-api": ">=2.0.0-rc.2",
+    "polkadot-api": ">=2.0.0-rc.5",
     "rxjs": ">=7.8.0"
   },
   "devDependencies": {
-    "polkadot-api": "^2.0.0-rc.2",
+    "polkadot-api": "^2.0.0-rc.5",
     "rxjs": "^7.8.2"
   }
 }

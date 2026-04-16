@@ -2,6 +2,19 @@
 
 ## Unreleased
 
+## 0.8.0 2026-04-16
+
+### Changed
+
+- Update to PAPI 2.0.0
+- Removed CJS support
+
+## 0.7.1 2026-03-16
+
+### Fixed
+
+- Update dependencies
+
 ## 0.7.0 2026-02-23
 
 ### Changed

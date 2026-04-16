@@ -9,13 +9,13 @@
       "chain": "polkadot",
       "metadata": ".papi/metadata/dot.scale",
       "genesis": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-      "codeHash": "0xea937e06567742acd4321eb8acc4911a389130405c8ce6a9a6f81e3557d66740"
+      "codeHash": "0xe29a1246273f74b2fbfde9ede985ccbe86b844be0a3537e34eb2bcd68c3b3358"
     },
     "wndAh": {
       "chain": "westend_asset_hub",
       "metadata": ".papi/metadata/wndAh.scale",
       "genesis": "0x67f9723393ef76214df0118c34bbbd3dbebc8ed46a10973a8c969d48fe7598c9",
-      "codeHash": "0xd195ae6fe231497569f212f12ae64eee3c2c8b7525f2aae65535149a9b1386e7"
+      "codeHash": "0x1d1edb9e22530c156c749a751f7b4ca4332a2c9aa6f2ece55b1dfeb5ddb4ac3f"
     }
   }
 }

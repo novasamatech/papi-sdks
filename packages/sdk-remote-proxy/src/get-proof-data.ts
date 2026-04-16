@@ -111,7 +111,7 @@ export const createGetProof = (
   return (
     proxied: SS58String,
   ): Promise<{
-    proof: Binary[]
+    proof: Uint8Array[]
     block: number
     at: BlockInfo
     proxied: SS58String
@@ -130,7 +130,7 @@ export const createGetProof = (
           ).pipe(
             map((blocks) => {
               const [height, stateRootHash] = blocks.at(-1)!
-              return { height, stateRootHash: stateRootHash.asHex() }
+              return { height, stateRootHash }
             }),
             distinctUntilChanged((a, b) => a.height === b.height),
             switchMap(({ height, stateRootHash }) =>
