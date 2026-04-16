@@ -10,14 +10,14 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "module": "./dist/index.js",
-      "import": "./dist/index.js",
-      "default": "./dist/index.js"
+      "module": "./dist/src/index.js",
+      "import": "./dist/src/index.js",
+      "default": "./dist/src/index.js"
     }
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "browser": "./dist/index.js",
+  "main": "./dist/src/index.js",
+  "module": "./dist/src/index.js",
+  "browser": "./dist/src/index.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"
@@ -31,10 +31,10 @@
   "dependencies": {
     "@ethereumjs/rlp": "^10.1.1",
     "@polkadot-api/common-sdk-utils": "workspace:*",
-    "@polkadot-api/substrate-bindings": "^0.20.0",
+    "@polkadot-api/substrate-bindings": "^0.20.1",
     "abitype": "^1.2.3",
-    "polkadot-api": "2.0.0",
-    "viem": "^2.47.11"
+    "polkadot-api": "2.0.2",
+    "viem": "^2.48.0"
   },
   "peerDependencies": {
     "@polkadot-api/ink-contracts": ">=0.5.0",
@@ -42,7 +42,7 @@
     "rxjs": ">=7.8.0"
   },
   "devDependencies": {
-    "@polkadot-api/ink-contracts": "^0.6.0",
+    "@polkadot-api/ink-contracts": "^0.6.1",
     "polkadot-api": "^2.0.0-rc.5",
     "rxjs": "^7.8.2"
   }
