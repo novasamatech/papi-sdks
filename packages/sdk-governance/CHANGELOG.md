@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.6.0 2026-04-16
+
 ### Changed
 
 - Update to PAPI 2.0.0
