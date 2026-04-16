@@ -58,8 +58,7 @@ export const createMultisigProxiedSigner = (
           originalAtBlockNumber,
           ...rest
         ) => {
-          const tx = (await txFromCallData(Binary.fromBytes(callData)))
-            .decodedCall
+          const tx = (await txFromCallData(callData)).decodedCall
           if (!TERMINAL_MULTSIGS.has(tx.value.type))
             return signer.signTx(
               callData,
@@ -75,16 +74,14 @@ export const createMultisigProxiedSigner = (
             at: { number: startAtBlock, hash },
           } = await getProof(proxiedAccount)
 
-          const newCallData = (
-            await unsafeParaApi.tx.Utility.batch_all({
-              calls: [
-                register_remote_proxy_proof({
-                  proof: Enum("RelayChain", { proof, block }),
-                }).decodedCall,
-                tx,
-              ],
-            }).getEncodedData()
-          ).asBytes()
+          const newCallData = await unsafeParaApi.tx.Utility.batch_all({
+            calls: [
+              register_remote_proxy_proof({
+                proof: Enum("RelayChain", { proof, block }),
+              }).decodedCall,
+              tx,
+            ],
+          }).getEncodedData()
 
           const newSignedExtensions = { ...signedExtensions }
           if (!mortality.preserve) {
@@ -114,14 +111,11 @@ export const createMultisigProxiedSigner = (
       ...withBatchSigner,
       signTx: async (callData, ...rest) =>
         withBatchSigner.signTx(
-          (
-            await remote_proxy_with_registered_proof({
-              real: Enum("Id", proxiedAccount),
-              force_proxy_type: undefined,
-              call: (await txFromCallData(Binary.fromBytes(callData)))
-                .decodedCall,
-            }).getEncodedData()
-          ).asBytes(),
+          await remote_proxy_with_registered_proof({
+            real: Enum("Id", proxiedAccount),
+            force_proxy_type: undefined,
+            call: (await txFromCallData(callData)).decodedCall,
+          }).getEncodedData(),
           ...rest,
         ),
     }

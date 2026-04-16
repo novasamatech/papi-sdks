@@ -2,6 +2,19 @@
 
 ## Unreleased
 
+## 0.5.0 2026-04-16
+
+### Changed
+
+- Update to PAPI 2.0.0
+- Removed CJS support
+
+## 0.4.0 2026-03-16
+
+### Changed
+
+- AsyncTransaction takes at most 2 generic arguments: Asset and Ext
+
 ## 0.3.0 2026-02-23
 
 ### Changed
